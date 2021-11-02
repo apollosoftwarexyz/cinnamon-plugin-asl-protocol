@@ -11,7 +11,7 @@ req/res protocol.
   // ...
   
   await Cinnamon.initialize({
-      load(framework) {
+      async load(framework) {
           framework.use(new ApolloProtocol(framework));
       }
   });
