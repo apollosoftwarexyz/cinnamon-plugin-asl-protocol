@@ -1,7 +1,7 @@
 {
   "name": "@apollosoftwarexyz/cinnamon-plugin-asl-protocol",
   "packageManager": "yarn@3.1.0",
-  "version": "1.0.0",
+  "version": "1.0.0-readme",
   "main": "dist/main.js",
   "types": "types/shim.d.ts",
   "scripts": {
@@ -10,11 +10,11 @@
     "publish": "yarn npm publish --access public"
   },
   "devDependencies": {
-    "@apollosoftwarexyz/cinnamon": "^0.0.19",
+    "@apollosoftwarexyz/cinnamon": "^0.0.21",
     "@types/koa": "^2.13.4",
     "@types/node": "^16.11.6"
   },
   "peerDependencies": {
-    "@apollosoftwarexyz/cinnamon": "^0.0.19"
+    "@apollosoftwarexyz/cinnamon": "^0.0.x"
   }
 }
