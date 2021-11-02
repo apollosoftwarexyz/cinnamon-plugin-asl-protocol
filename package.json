@@ -1,7 +1,7 @@
 {
   "name": "@apollosoftwarexyz/cinnamon-plugin-asl-protocol",
   "packageManager": "yarn@3.1.0",
-  "version": "1.0.0-readme",
+  "version": "1.0.1",
   "main": "dist/main.js",
   "types": "types/shim.d.ts",
   "scripts": {
