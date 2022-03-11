@@ -13,6 +13,7 @@ req/res protocol.
   
   await Cinnamon.initialize({
       async load(framework) {
+          // Adds convenience methods for common response types.
           framework.use(new ApolloProtocol(framework));
       }
   });
