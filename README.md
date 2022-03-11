@@ -4,7 +4,8 @@ req/res protocol.
 
 ## Installation
 1. `yarn add @apollosoftwarexyz/cinnamon-plugin-asl-protocol`
-2. Update your Cinnamon project's `src/main.ts` to include the plugin in the `load` hook:
+2. Update your Cinnamon project's `src/main.ts` to include the plugin in the
+   `load` hook:
   ```ts
   import { ApolloProtocol } from '@apollosoftwarexyz/cinnamon-plugin-asl-protocol';
   
@@ -20,8 +21,8 @@ req/res protocol.
   ```
   
 ## Usage
-You can use the `success`, `successRaw` and `error` methods in your controller routes,
-by calling the respective method on the context.
+You can use the `success`, `successRaw` and `error` methods in your controller
+routes, by calling the respective method on the context.
 
 - For a `success` response:
   
@@ -38,8 +39,8 @@ by calling the respective method on the context.
   }
   ```
   
-  This will yield the following JSON response, which would usually be unwrapped on
-  the client-side by the complimentary client plugin:
+  This will yield the following JSON response, which would usually be unwrapped
+  on the client-side by the complimentary client plugin:
   ```json
   {
     "success": true,
@@ -57,8 +58,8 @@ by calling the respective method on the context.
   
     // ...
     
-    // The MIME-type 'text/plain' would be set by default, but is specified here
-    // for demonstration purposes.
+    // The MIME-type 'text/plain' would be set by default, but is specified
+    // here for demonstration purposes.
     return ctx.successRaw("Hello, world!", 'text/plain');
   
   }
@@ -80,9 +81,9 @@ by calling the respective method on the context.
     // Where:
     // - 404 is the HTTP status code,
     // - "ERR_MISSING_ENTITY" is your app-specific error name
-    // - "User not found!" is a human-readable message in your product's primary language
-    //   that your app can display as a fallback to its local translation based on the
-    //   error name.
+    // - "User not found!" is a human-readable message in your product's
+    //   primary language that your app can display as a fallback to its local
+    //   translation based on the error name.
     return ctx.error(404, "ERR_MISSING_ENTITY", "User not found!");
   
   }

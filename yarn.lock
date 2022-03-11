@@ -2,25 +2,25 @@
 # Manual changes might be lost - proceed with caution!
 
 __metadata:
-  version: 5
+  version: 6
   cacheKey: 8
 
 "@apollosoftwarexyz/cinnamon-plugin-asl-protocol@workspace:.":
   version: 0.0.0-use.local
   resolution: "@apollosoftwarexyz/cinnamon-plugin-asl-protocol@workspace:."
   dependencies:
-    "@apollosoftwarexyz/cinnamon": ^0.0.19
+    "@apollosoftwarexyz/cinnamon": ^0.0.36
     "@types/koa": ^2.13.4
-    "@types/node": ^16.11.6
+    "@types/node": ^17.0.21
   peerDependencies:
-    "@apollosoftwarexyz/cinnamon": ^0.0.19
+    "@apollosoftwarexyz/cinnamon": ^0.0.x
   languageName: unknown
   linkType: soft
 
-"@apollosoftwarexyz/cinnamon@npm:^0.0.19":
-  version: 0.0.19
-  resolution: "@apollosoftwarexyz/cinnamon@npm:0.0.19"
-  checksum: 6f61a2353867201cc396e0c6e23a7e5ec10debba5185380b36dcab8db4486b483dd5fd2d0fea811f43c5e517797ca7a3ab0fd77d6f8fdfecf9b158fa3a960dbc
+"@apollosoftwarexyz/cinnamon@npm:^0.0.36":
+  version: 0.0.36
+  resolution: "@apollosoftwarexyz/cinnamon@npm:0.0.36"
+  checksum: b209fa6da0c9293ab97815e3db117a0a55cdf55077fcd3d4c6e19c15e2453aa6770a1f4ffbd674450335b04da10df194d55e62d0bd28027d18c32cecbeefdd31
   languageName: node
   linkType: hard
 
@@ -147,10 +147,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^16.11.6":
+"@types/node@npm:*":
   version: 16.11.6
   resolution: "@types/node@npm:16.11.6"
   checksum: 6e19634766ff589d3d2f361c2196b671f8f133cdadc5ad347a621c360d8994b6c4fbccfb2ad9c60c588c593831a96497c9c6b77d2b7e91be723384b94f6368e7
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^17.0.21":
+  version: 17.0.21
+  resolution: "@types/node@npm:17.0.21"
+  checksum: 89dcd2fe82f21d3634266f8384e9c865cf8af49685639fbdbd799bdd1040480fb1e8eeda2d3b9fce41edbe704d2a4be9f427118c4ae872e8d9bb7cbeb3c41a94
   languageName: node
   linkType: hard
 
