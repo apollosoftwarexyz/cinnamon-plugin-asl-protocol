@@ -1,17 +1,35 @@
-/// <reference types="koa" />
-
 export * from './main';
+import { _Context } from '@apollosoftwarexyz/cinnamon';
 
-declare module "koa" {
+declare module "@apollosoftwarexyz/cinnamon" {
     interface Context {
+        /**
+         * You should not set the response body directly with
+         * cinnamon-plugin-asl-protocol.
+         *
+         * You should instead use ctx.successRaw, or access the response stream
+         * directly with ctx.res.
+         */
+        body: never;
+
+        /**
+         * You should not set the response body directly with
+         * cinnamon-plugin-asl-protocol.
+         *
+         * You should instead use ctx.successRaw, or access the response stream
+         * directly with ctx.res.
+         */
+        response: Omit<_Context["response"], "body">;
+
         /**
          * Indicates the response was successful by JSON-encoding and wrapping
          * the specified payload with an ASL Protocol Success response before
          * returning it to the client.
          *
          * @param payload Optionally, the response payload to include.
+         * @param statusCode Optionally, the status code to set. (Default: 200)
          */
-        success: (payload?: any) => void;
+        success: (payload?: any, statusCode?: number) => void;
 
         /**
          * Indicates that the request was successful by returning the raw
@@ -23,8 +41,9 @@ declare module "koa" {
          *                   will be injected if it is an object.)
          * @param mimeType The MIME type to set in the response header. Defaults
          *                 to `text/plain`.
+         * @param statsuCode Optionally, the status code to set. (Default: 200)
          */
-        successRaw: (rawPayload?: any, mimeType?: string) => void;
+        successRaw: (rawPayload?: any, mimeType?: string, statusCode?: number) => void;
 
         /**
          * Indicates that the request failed by returning an ASL Protocol Error
