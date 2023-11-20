@@ -1,2 +1,5 @@
+.idea/
 .yarn/
 yarn.lock
+.editorconfig
+.eslintrc.js
