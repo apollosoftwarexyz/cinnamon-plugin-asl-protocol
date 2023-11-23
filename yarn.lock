@@ -5,35 +5,33 @@ __metadata:
   version: 8
   cacheKey: 10
 
-"@apollosoftwarexyz/cinnamon-internals@npm:^0.1.4, @apollosoftwarexyz/cinnamon-internals@npm:^0.1.5":
-  version: 0.1.5
-  resolution: "@apollosoftwarexyz/cinnamon-internals@npm:0.1.5"
+"@apollosoftwarexyz/cinnamon-internals@portal:/Users/samjakob/Projects/cinnamon/packages/cinnamon-internals::locator=%40apollosoftwarexyz%2Fcinnamon-plugin-asl-protocol%40workspace%3A.":
+  version: 0.0.0-use.local
+  resolution: "@apollosoftwarexyz/cinnamon-internals@portal:/Users/samjakob/Projects/cinnamon/packages/cinnamon-internals::locator=%40apollosoftwarexyz%2Fcinnamon-plugin-asl-protocol%40workspace%3A."
   dependencies:
     rimraf: "npm:^5.0.5"
-  checksum: 16db5979430f41c572f0c6cd857c54dd2a587be73a1d7f766560fdf83e5e589ee63b3315f2b4fd98470d23d3ae9f4487e7e7e13d3ebe802bd0b20cf0e7dc6c65
   languageName: node
-  linkType: hard
+  linkType: soft
 
 "@apollosoftwarexyz/cinnamon-plugin-asl-protocol@workspace:.":
   version: 0.0.0-use.local
   resolution: "@apollosoftwarexyz/cinnamon-plugin-asl-protocol@workspace:."
   dependencies:
-    "@apollosoftwarexyz/cinnamon": "npm:^0.1.4"
-    "@types/node": "npm:^20.9.2"
-    typescript: "npm:^5.2.2"
+    "@apollosoftwarexyz/cinnamon": "npm:^0.2.0"
+    "@types/node": "npm:^20.9.4"
+    typescript: "npm:^5.3.2"
   peerDependencies:
     "@apollosoftwarexyz/cinnamon": ">= 0.1.0 < 0.3.0"
   languageName: unknown
   linkType: soft
 
-"@apollosoftwarexyz/cinnamon-validator@npm:^0.1.4":
-  version: 0.1.6
-  resolution: "@apollosoftwarexyz/cinnamon-validator@npm:0.1.6"
+"@apollosoftwarexyz/cinnamon-validator@portal:/Users/samjakob/Projects/cinnamon/packages/cinnamon-validator::locator=%40apollosoftwarexyz%2Fcinnamon-plugin-asl-protocol%40workspace%3A.":
+  version: 0.0.0-use.local
+  resolution: "@apollosoftwarexyz/cinnamon-validator@portal:/Users/samjakob/Projects/cinnamon/packages/cinnamon-validator::locator=%40apollosoftwarexyz%2Fcinnamon-plugin-asl-protocol%40workspace%3A."
   dependencies:
-    "@apollosoftwarexyz/cinnamon-internals": "npm:^0.1.5"
-  checksum: b20887bf7e2e6e7b087454b1b924a143b6f31d587235d6f4b07147fdac68b431c487262616762b64cfd7325c26f4416432b69fc22fb4289d206fa5eff54d939f
+    "@apollosoftwarexyz/cinnamon-internals": "npm:^0.2.0"
   languageName: node
-  linkType: hard
+  linkType: soft
 
 "@apollosoftwarexyz/cinnamon-youch@npm:^3.2.0":
   version: 3.2.0
@@ -46,30 +44,29 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@apollosoftwarexyz/cinnamon@npm:^0.1.4":
-  version: 0.1.4
-  resolution: "@apollosoftwarexyz/cinnamon@npm:0.1.4"
+"@apollosoftwarexyz/cinnamon@portal:/Users/samjakob/Projects/cinnamon/packages/cinnamon::locator=%40apollosoftwarexyz%2Fcinnamon-plugin-asl-protocol%40workspace%3A.":
+  version: 0.0.0-use.local
+  resolution: "@apollosoftwarexyz/cinnamon@portal:/Users/samjakob/Projects/cinnamon/packages/cinnamon::locator=%40apollosoftwarexyz%2Fcinnamon-plugin-asl-protocol%40workspace%3A."
   dependencies:
-    "@apollosoftwarexyz/cinnamon-internals": "npm:^0.1.4"
-    "@apollosoftwarexyz/cinnamon-validator": "npm:^0.1.4"
+    "@apollosoftwarexyz/cinnamon-internals": "npm:^0.2.0"
+    "@apollosoftwarexyz/cinnamon-validator": "npm:^0.2.0"
     "@apollosoftwarexyz/cinnamon-youch": "npm:^3.2.0"
-    "@types/formidable": "npm:^3.4.2"
-    "@types/koa": "npm:^2.13.8"
-    "@types/node": "npm:^20.5.7"
-    "@types/qs": "npm:^6.9.7"
+    "@types/formidable": "npm:^3.4.5"
+    "@types/koa": "npm:^2.13.11"
+    "@types/node": "npm:^20.9.1"
+    "@types/qs": "npm:^6.9.10"
     chalk: "npm:^4"
     chokidar: "npm:^3.5.3"
     co: "npm:^4.6.0"
     formidable: "npm:^3.5.1"
     iconv-lite: "npm:^0.6.3"
     koa: "npm:^2.14.2"
-    koa-router: "npm:^12.0.0"
+    koa-router: "npm:^12.0.1"
     qs: "npm:^6.11.2"
     toml: "npm:^3.0.0"
-    uuid: "npm:^9.0.0"
-  checksum: f8ac09ec8ea1ff75b5abd16386373d1443c20b99cdd980bed5b6318038e0331b4d92494579516b8d6d04e51ead63402a50d84e27a2705707935067dd30cc34ce
+    uuid: "npm:^9.0.1"
   languageName: node
-  linkType: hard
+  linkType: soft
 
 "@gar/promisify@npm:^1.1.3":
   version: 1.1.3
@@ -196,7 +193,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/formidable@npm:^3.4.2":
+"@types/formidable@npm:^3.4.5":
   version: 3.4.5
   resolution: "@types/formidable@npm:3.4.5"
   dependencies:
@@ -251,9 +248,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/koa@npm:^2.13.8":
-  version: 2.13.11
-  resolution: "@types/koa@npm:2.13.11"
+"@types/koa@npm:^2.13.11":
+  version: 2.13.12
+  resolution: "@types/koa@npm:2.13.12"
   dependencies:
     "@types/accepts": "npm:*"
     "@types/content-disposition": "npm:*"
@@ -263,7 +260,7 @@ __metadata:
     "@types/keygrip": "npm:*"
     "@types/koa-compose": "npm:*"
     "@types/node": "npm:*"
-  checksum: 135b35c799c45af57514edf27375f8db83f457a3753647820052f9f328405e30954b846a558a5a7007b48e1843b4ed4ba130a0d3f72f4584d8a528b5bf29b832
+  checksum: d148fb02aa25cb239d5179211cd66f19275e7fc2563532dd2bc347163332f771dea224b7555209530abf6777afa5b5c7a2d650e752fb1126ce362fbdde4ec214
   languageName: node
   linkType: hard
 
@@ -281,12 +278,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^20.5.7, @types/node@npm:^20.9.2":
-  version: 20.9.2
-  resolution: "@types/node@npm:20.9.2"
+"@types/node@npm:^20.9.1, @types/node@npm:^20.9.4":
+  version: 20.9.4
+  resolution: "@types/node@npm:20.9.4"
   dependencies:
     undici-types: "npm:~5.26.4"
-  checksum: 8bab2870bfc02efc988c53dfb0149634f8feb824132cc7f20b36f3d55d89ef893e3a43d545524a5cb3a284f4ce68ae4181d75a4a39cee6b79c586d719e6b7461
+  checksum: d567855b48e453b443499c17fc6c939d154732b54319a05b9b31db6e475e6458f053838635b201b1bb493d349d9b1af0aecc58b28fd6062e564e9fbf593199eb
   languageName: node
   linkType: hard
 
@@ -297,7 +294,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/qs@npm:^6.9.7":
+"@types/qs@npm:^6.9.10":
   version: 6.9.10
   resolution: "@types/qs@npm:6.9.10"
   checksum: 3e479ee056bd2b60894baa119d12ecd33f20a25231b836af04654e784c886f28a356477630430152a86fba253da65d7ecd18acffbc2a8877a336e75aa0272c67
@@ -1234,7 +1231,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"koa-router@npm:^12.0.0":
+"koa-router@npm:^12.0.1":
   version: 12.0.1
   resolution: "koa-router@npm:12.0.1"
   dependencies:
@@ -1958,23 +1955,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^5.2.2":
-  version: 5.2.2
-  resolution: "typescript@npm:5.2.2"
+"typescript@npm:^5.3.2":
+  version: 5.3.2
+  resolution: "typescript@npm:5.3.2"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: d65e50eb849bd21ff8677e5b9447f9c6e74777e346afd67754934264dcbf4bd59e7d2473f6062d9a015d66bd573311166357e3eb07fea0b52859cf9bb2b58555
+  checksum: 415e5fb6611f5713e460bad48039f00bcfdbde53a2f911727862d5aa9c5d5edd250059a419df382d8f031709e15a169c41eb62b6a401da5eec7ac0f4e359d6ac
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@npm%3A^5.2.2#optional!builtin<compat/typescript>":
-  version: 5.2.2
-  resolution: "typescript@patch:typescript@npm%3A5.2.2#optional!builtin<compat/typescript>::version=5.2.2&hash=f3b441"
+"typescript@patch:typescript@npm%3A^5.3.2#optional!builtin<compat/typescript>":
+  version: 5.3.2
+  resolution: "typescript@patch:typescript@npm%3A5.3.2#optional!builtin<compat/typescript>::version=5.3.2&hash=e012d7"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: f79cc2ba802c94c2b78dbb00d767a10adb67368ae764709737dc277273ec148aa4558033a03ce901406b35fddf4eac46dabc94a1e1d12d2587e2b9cfe5707b4a
+  checksum: 1b45cdfb577a78ae7a9a9d0b77a7b772142cb98ba05e4e5aefba7044a028ded885bcecef63166407a5986645cea816fe4986894336aacd5e791796ea79a6a7ed
   languageName: node
   linkType: hard
 
@@ -2010,7 +2007,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"uuid@npm:^9.0.0":
+"uuid@npm:^9.0.1":
   version: 9.0.1
   resolution: "uuid@npm:9.0.1"
   bin:

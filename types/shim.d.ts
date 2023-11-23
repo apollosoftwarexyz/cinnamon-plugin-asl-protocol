@@ -1,18 +1,9 @@
 export * from './main';
-import { _Context } from '@apollosoftwarexyz/cinnamon';
+import { BaseContext } from '@apollosoftwarexyz/cinnamon';
+
+type Response = Omit<BaseContext["response"], "body">;
 
 declare module "@apollosoftwarexyz/cinnamon" {
-    interface Response extends Omit<_Context["response"], "body"> {
-        /**
-         * You should not set the response body directly with
-         * cinnamon-plugin-asl-protocol.
-         *
-         * You should instead use ctx.successRaw, or access the response stream
-         * directly with ctx.res.
-         */
-        body: never;
-    }
-
     interface Context {
         /**
          * You should not set the response body directly with
@@ -30,7 +21,16 @@ declare module "@apollosoftwarexyz/cinnamon" {
          * You should instead use ctx.successRaw, or access the response stream
          * directly with ctx.res.
          */
-        response: Response;
+        response: Response & {
+            /**
+             * You should not set the response body directly with
+             * cinnamon-plugin-asl-protocol.
+             *
+             * You should instead use ctx.successRaw, or access the response stream
+             * directly with ctx.res.
+             */
+            body: never;
+        };
 
         /**
          * Indicates the response was successful by JSON-encoding and wrapping

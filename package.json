@@ -17,11 +17,17 @@
     "publish": "yarn npm publish --access public"
   },
   "devDependencies": {
-    "@apollosoftwarexyz/cinnamon": "^0.1.4",
-    "@types/node": "^20.9.2",
-    "typescript": "^5.2.2"
+    "@apollosoftwarexyz/cinnamon": "^0.2.0",
+    "@types/node": "^20.9.4",
+    "typescript": "^5.3.2"
   },
   "peerDependencies": {
-    "@apollosoftwarexyz/cinnamon": ">= 0.1.0 < 0.3.0"
+    "@apollosoftwarexyz/cinnamon": ">= 0.2.0 < 0.3.0"
+  },
+  "resolutions": {
+    "@apollosoftwarexyz/cinnamon": "portal:/Users/samjakob/Projects/cinnamon/packages/cinnamon",
+    "@apollosoftwarexyz/cinnamon-database": "portal:/Users/samjakob/Projects/cinnamon/packages/cinnamon-database",
+    "@apollosoftwarexyz/cinnamon-internals": "portal:/Users/samjakob/Projects/cinnamon/packages/cinnamon-internals",
+    "@apollosoftwarexyz/cinnamon-validator": "portal:/Users/samjakob/Projects/cinnamon/packages/cinnamon-validator"
   }
 }

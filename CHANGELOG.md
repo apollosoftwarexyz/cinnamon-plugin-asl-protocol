@@ -1,3 +1,9 @@
+# v2.0.3
+- Replace deprecated `CinnamonWebServerModulePlugin` with
+  `CinnamonHookConsumer`
+- Replace `_Context` (removed) with `BaseContext`
+- Cinnamon v0.2.0+ only 
+
 # v2.0.2
 - Fix typing issues
 - Update for Cinnamon v0.2.0

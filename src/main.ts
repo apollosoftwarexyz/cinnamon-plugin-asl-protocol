@@ -1,13 +1,13 @@
 import Cinnamon, {
     HttpError,
     CinnamonPlugin,
-    CinnamonWebServerModulePlugin,
-    WebServer
+    CinnamonHookConsumer,
+    WebServer,
 } from '@apollosoftwarexyz/cinnamon';
 
 export const ASW_PROTOCOL_VERSION = 2;
 
-export class ApolloProtocol extends CinnamonPlugin implements CinnamonWebServerModulePlugin {
+export class ApolloProtocol extends CinnamonPlugin implements CinnamonHookConsumer {
     constructor(framework: Cinnamon, options?: {}) {
         super(framework, "xyz.apollosoftware", "cinnamon.protocol");
     }
