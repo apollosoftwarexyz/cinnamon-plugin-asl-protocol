@@ -1,7 +1,7 @@
 {
   "packageManager": "yarn@4.0.2",
   "name": "@apollosoftwarexyz/cinnamon-plugin-asl-protocol",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "author": "Apollo Software Limited",
   "description": "A Cinnamon plugin that adds convenience methods for Apollo Software's REST req/res protocol.",
   "license": "MIT",
